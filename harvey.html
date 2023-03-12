@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+</head>
+<body>
+
+    <div class="bdy">
+        <div class="tab">
+            <div class="btn">
+                <div class="logo">
+                    <img src="logo.jpg" class="log" />
+
+                </div>
+                <button id="btn1" onclick="openHome()" ><i class="fas fa-home "></i>Home</button>
+                <button id="btn2" onclick="openBranch()"><i  class="fas fa-code-branch "></i>Branches</button>
+                <button id="btn3" onclick="openServices()"><i class="fas fa-concierge-bell "></i>Services</button>
+                
+            </div>
+
+
+        </div>
+    </div>
+    <div id="content1" class="content">
+        <div class="content-left">
+            <h1>harvey's eatery</h1>
+            <p>“To capture the character of our community, boiling down its stocks, foraging its plants, and showcasing its produce; all in an attempt to capture a time and a space in the confines of a plate, but more often in a series of plates.”</p>
+
+        </div>
+        <div class="content-right">
+            <img src="logo.jpg" />
+        </div>
+    </div>
+    <div id="content2" class="content">
+        <div class="content-left">
+            <h1>Branches</h1>
+            <p> Robinsons Galleria South
+               <br /> (0906)308-5307<br />
+            Alabang Town Center
+            <br />(0920)958-7465<br />
+            </p>
+
+        </div>
+        <div class="content-right">
+            <img src="branch.jfif" />
+        </div>
+    </div>
+    <div id="content3" class="content">
+        <div class="content-left">
+            <h1>Services</h1>
+            <p>
+                Waiter service.
+                Chinese banquet service. ...
+                Buffet service. ...
+                Self-service. ...
+                Semi-self service.
+            </p>
+
+        </div>
+        <div class="content-right">
+            <img src="serv.jpg" height="550px"/>
+        </div>
+    </div>
+    <div id="content4" class="content">
+        <div class="content-left">
+            <h1>About Us</h1>
+            <p>
+                
+            </p>
+        </div>
+        <div class="content-right">
+            <img src="about.jpg" />
+        </div>
+    </div>
+    <div id="content5" class="content">
+        <div class="content-left">
+            <h1>Contact Us</h1>
+            <p>
+                
+                Opening Hour 8:00 AM - 5 PM<br />
+                Monday - Sunday<br />
+                <br />
+                Email: kennethbeauty@gmail.com<br />
+                fb : Kenneth's Beauty Salon
+            </p>
+
+        </div>
+        <div class="content-right">
+            <img src="logo.jpg" />
+        </div>
+    </div>
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+        var content5 = document.getElementById("content5");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+
+        function openHome() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn1.style.color = "#C55900";
+            btn2.style.color = "#FFFFFF";
+            btn3.style.color = "#FFFFFF";
+            btn4.style.color = "#FFFFFF";
+            btn5.style.color = "#FFFFFF";
+            
+        }
+        function openBranch() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn2.style.color = "#C55900";
+            btn1.style.color = "#FFFFFF";
+            btn3.style.color = "#FFFFFF";
+            btn4.style.color = "#FFFFFF";
+            btn5.style.color = "#FFFFFF";
+
+        }
+        function openServices() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn3.style.color = "#C55900";
+            btn2.style.color = "#FFFFFF";
+            btn1.style.color = "#FFFFFF";
+            btn4.style.color = "#FFFFFF";
+            btn5.style.color = "#FFFFFF";
+
+        }
+        function openAboutUS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(0)";
+            content5.style.transform = "translateX(100%)";
+            btn4.style.color = "#C55900";
+            btn2.style.color = "#FFFFFF";
+            btn3.style.color = "#FFFFFF";
+            btn1.style.color = "#FFFFFF";
+            btn5.style.color = "#FFFFFF";
+                
+        }
+        function openContactUS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(0)";
+            btn5.style.color = "#C55900";
+            btn2.style.color = "#FFFFFF";
+            btn3.style.color = "#FFFFFF";
+            btn4.style.color = "#FFFFFF";
+            btn1.style.color = "#FFFFFF";
+        }
+    </script>
+    
+
+</body>
+</html>
